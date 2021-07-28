@@ -239,7 +239,6 @@ body{
 }
 
 
-
 #circle3 {
   position: absolute;
   left: 12%;
@@ -396,16 +395,9 @@ body{
   width: 35%;
   height: 17vw;
   margin-top: -51%;
-  /* border-radius: 10%; */
+  border-radius: 5%;
   border: 2px solid black;
   visibility: hidden;
-
-  color: white;
-  text-align: center;
-  line-height: 30vw;
-  font-family: Lato, sans-serif;
-  font-size: 1.1vw;
-  word-spacing: 0.2em;
 }
 
 
@@ -426,28 +418,91 @@ body{
 
 #display.circle1 {
   visibility: visible;
-  background: url(physicstestpicture.png);
+  background: url(cordisplay.png), url(cordisplay2.png), url(cordisplay3.png);
+  background-position: left, center, right;
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.3;
   transition: 0s;
 }
 
 #display.circle2 {
   visibility: visible;
-  background-color: green;
+  background: url(elldisplay1.png), url(elldisplay2.png);
+  background-position: left, right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
   transition: 0s;
 }
 
 #display.circle3 {
   visibility: visible;
-  background-color: red;
+  background: url(fmdisplay1.png), url(fmdisplay2.png), url(fmdisplay3.png);
+  background-position: left, center, right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
   transition: 0s;
 }
 
 #display.circle4 {
   visibility: visible;
-  background-color: purple;
+  background: url(inertialdisplay1.png), url(inertialdisplay2.png);
+  background-position: left, right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
   transition: 0s;
+}
+
+#displayover{
+  background-color: none;
+  position: absolute;
+  left: 32.15%;
+  width: 35%;
+  height: 17vw;
+  margin-top: -51%;
+  border-radius: 5%;
+  border: 2px solid black;
+  visibility: hidden;
+
+  color: orange;
+  text-align: center;
+  line-height: 15vw;
+  font-family: Lato, sans-serif;
+  font-size: 1.7vw;
+  word-spacing: 0.2em;
+}
+
+#displayover.open {
+  visibility: visible;
+  animation: display 1s ease-in;
+}
+
+#more{
+  position: absolute;
+  left: 87.75%;
+  width: 8%;
+  height: auto;
+  margin-top: -22.25%;
+  padding-top: 0%;
+  border-radius: 15%;
+  border: 0.35em solid rgba(63, 3, 115, 1);
+  background-color: rgba(96, 26, 156, 1);
+  cursor: pointer;
+  visibility: hidden;
+
+  color: white;
+  text-align: center;
+  line-height: 2.5vw;
+  font-family: Lato, sans-serif;
+  font-size: 0.75vw;
+}
+
+#more.open{
+  visibility: visible;
+  animation: display 1s ease-in;
 }
 
 

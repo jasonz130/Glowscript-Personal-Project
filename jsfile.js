@@ -18,7 +18,9 @@ var circle4text = document.getElementById("circlefourtextcontainer");
 var circle4overlay = document.getElementById("circle4overlay");
 
 var display = document.getElementById("display");
+var displayover = document.getElementById("displayover");
 
+var more = document.getElementById("more");
 
 
 mars.onclick = function() {
@@ -43,6 +45,9 @@ mars.onclick = function() {
     circle4overlay.className = "";
 
     display.className = "";
+    displayover.className = "";
+
+    more.className = "";
   } else {
     mars.className = "open";
     handicon.className = "open";
@@ -64,6 +69,9 @@ mars.onclick = function() {
     circle4overlay.className = "open";
 
     display.className = "open";
+    displayover.className = "open";
+
+    more.className = "open";
   }
 };
 
